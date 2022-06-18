@@ -13,10 +13,10 @@ I used various sources (see credits) to build my EFI and did some testing.
 It should leave you with a stable and reliable build but, as always, these things are never really over.
 Compatible with macOS Mojave, Catalina, Big Sur, Monterey and Ventura.
 
-![macOS Ventura](https://github.com/DANDEBAND/Nucintosh/blob/master/ventura.png?raw=true)
+![macOS Ventura](https://github.com/DANDEBAND/Intel-Nucintosh/blob/main/blog/immagine/ventura.png?raw=true)
 Funziona | Working: macOS 13 Ventura Beta 1
 
-![macOS Monterey](https://github.com/zearp/Nucintosh/blob/master/Stuff/Monterey.png?raw=true)
+![macOS Monterey](https://github.com/DANDEBAND/Intel-Nucintosh/blob/main/blog/immagine/Monterey.png)?raw=true)
 Funziona | Working: macOS 12 Monterey
 
 ## Dettaglia | Details
