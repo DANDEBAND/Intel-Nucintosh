@@ -1,5 +1,5 @@
-# Intel-Nucintosh
-#Intel NUC8IxBEx Hackintosh 2022
+# Intel-Nucintosh 2022
+# Intel NUC8IxBEx Hackintosh
 
 [ITALIANO]
 Questo è un repository rapido per i modelli Intel NUC di ottava generazione Coffee Lake.
