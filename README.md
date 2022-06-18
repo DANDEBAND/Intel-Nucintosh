@@ -61,7 +61,7 @@ Boot -> Secure Boot -> Disable
 + Download macOS from the App Store and create a USB installer with *[createinstallmedia](https://support.apple.com/en-us/HT201372)* on macOS (real mac/hack or vm) or use [gibMacOS](https://github.com/corpnewt/gibMacOS)\*
 + Download the EFI folder [here](https://github.com/DANDEBAND/Intel-Nucintosh/releases)
 + Edit config.plist with [Plistedit Pro](https://www.fatcatsoftware.com/plisteditpro/): Download
-+ Edit config.plist with [OpenCore Configuration] (https://mackie100projects.altervista.org/download-opencore-configurator/): Download
++ Edit config.plist with [OpenCore Configuration](https://mackie100projects.altervista.org/download-opencore-configurator/): Download
 ```
 PlatformInfo -> Generic -> MLB
 PlatformInfo -> Generic -> ROM
