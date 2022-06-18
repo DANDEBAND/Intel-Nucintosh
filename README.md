@@ -19,7 +19,7 @@ Funziona | Working: macOS 13 Ventura Beta 1
 ![macOS Monterey](https://github.com/DANDEBAND/Intel-Nucintosh/blob/main/blog/immagine/Monterey.png)?raw=true)
 Funziona | Working: macOS 12 Monterey
 
-## Dettaglia | Details
+## Dettagli | Details
 * Works with macOS *Big Sur* and *Monterey*
 * OpenCore bootloader with the following kexts:
   - Lilu
