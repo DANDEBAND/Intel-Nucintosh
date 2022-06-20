@@ -16,7 +16,7 @@ Compatible with macOS Mojave, Catalina, Big Sur, Monterey and Ventura.
 ![macOS Ventura](https://github.com/DANDEBAND/Intel-Nucintosh/blob/Images/ventura.png?raw=true)
 Funziona | Working: macOS 13 Ventura Beta 1
 
-![macOS Monterey](https://github.com/DANDEBAND/Intel-Nucintosh/blob/Images/Monterey.png)?raw=true)
+![macOS Monterey](https://github.com/DANDEBAND/Intel-Nucintosh/blob/Images/Monterey.png?raw=true)
 Funziona | Working: macOS 12 Monterey
 
 ## Dettagli | Details
