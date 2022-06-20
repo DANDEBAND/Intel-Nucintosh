@@ -36,16 +36,8 @@ Funziona | Working: macOS 12 Monterey
 * [Installazione | Installation](#installation)
 * [Post install](#post-install)
 * [Updating](#updating)
-* [Thunderbolt](#Thunderbolt)
-* [Apple and 3rd party wifi/bt](#apple3rd-party-bluetooth-and-wifi)
 * [Intel wifi/bt](#intel-bluetooth-and-wifi)
-* [Native bt dongle](#natively-supported-bluetooth-dongle)
-* [What doesn't work?](#not-workinguntested)
-* [Undervolting](#undervolting)
-* [Performance, power and noise](#performance-power-and-noise)
-  - [Noise](#noise)
-  - [Passive cooling](#passive-cooling)
-* [Todo](#todo)
+* [Everything](#Everything)
 * [Credits](#credits)
   
 ## Installation
@@ -112,27 +104,11 @@ That's all!
 ## Updating
 Updating is easy, first copy the MLB/ROM/SystemSerialNumber/SystemUUID values from your current config to a text file then delete the whole EFI folder and replace it with the latest release/clone from this repo. Copy your PlatformInfo fields from the text file into the new config. Unless you made other changes this is all thats needed.
 
-## Thunderbolt
-Should work as long as Thunderbolt security is set to legacy mode. Thanks to [crp724](https://github.com/zearp/Nucintosh/issues/3) for confirming. He also confirmed eGPU works in his Mantiz TB3 enclosure. I assume that if eGPU works then all other Thunderbolt stuff works as well. Thunderbolt devices need to be connected before starting up. Hotplug will not work. In order for Thunderbolt hotplugging to work you will need to [modify the firmware](https://github.com/zearp/Nucintosh/tree/tb3).
-
-## Apple/3rd party bluetooth and wifi
-For both 1st and 3rd party you will need a [supported](https://dortania.github.io/Wireless-Buyers-Guide/) wifi/bluetooth combo card and an adapter (see below) to convert it to M key. As far as I know compatible M key combo cards don't exist. 
-
-3rd party cards will need these kexts: [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup) + [BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM), read the instructions on the repo's and you'll be up and running in no time. I've tested the very affordable DW1820A in many machines including the NUC and it works great. For some cards you may need to create an entry under devices in the config that disables ASPM, this only needed if you have issues with sleep.
-
 ## Intel bluetooth and wifi
 + Wifi works and can be managed using native tools, speeds are still slow but connections are stable
 + Bluetooth works for HID devices such as mouse, keyboard and audio stuff but connections are flaky. It may also not wake up from sleep properly
 
-## Not working/untested
-+ Card reader add the RELEASE version of [this](https://github.com/0xFireWolf/RealtekCardReader/releases) and [this](https://github.com/0xFireWolf/RealtekCardReaderFriend/releases) kext to the kext folder and the config, it works but I have not fully tested it yet.
-+ IR receiver (it shows up in ioreg but no idea how to make macOS use it like on some MBP)
-+ Some, not all [continuity](https://www.apple.com/macos/continuity/) features work with the onboard Intel wifi/bt combo. Use an Apple Airport card to get all features working. 
-+ ~~4K [might need](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.en.md#lspcon-driver-support-to-enable-displayport-to-hdmi-20-output-on-igpu) some additional parameters and a new portmap~~ 4K confirmed working. Thanks again to [crp724](https://github.com/zearp/Nucintosh/issues/3)
-+ If you can't see your NVMe drive or have issues with it, disabling NVMeFix.kext in the config may help ([1](https://dortania.github.io/Anti-Hackintosh-Buyers-Guide/Storage.html),[2](https://github.com/acidanthera/nvmefix))
-+ You tell me!
-
-## Todo
+## Everything
 + Where possible further optimisations and ThunderBolt hot-plug support
 
 ## Credits
