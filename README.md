@@ -15,7 +15,7 @@ Compatible with macOS Mojave, Catalina, Big Sur, Monterey and Ventura.
 
 ![macOS Ventura](https://github.com/DANDEBAND/Intel-Nucintosh/blob/Images/ventura.png?raw=true)
 Funziona | Working: macOS Ventura Public Beta:
-Download & info EFI folder [here](https://github.com/DANDEBAND/Intel-Nucintosh/issues)
+Download & info EFI folder [here](https://github.com/DANDEBAND/Intel-Nucintosh/issues/3)
 
 ![macOS Monterey](https://github.com/DANDEBAND/Intel-Nucintosh/blob/Images/Monterey.png?raw=true)
 Funziona | Working: macOS 12 Monterey
