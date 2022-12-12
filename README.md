@@ -15,10 +15,10 @@ Compatible with macOS Mojave, Catalina, Big Sur, Monterey and Ventura.
 
 ![macOS Ventura](https://github.com/DANDEBAND/Intel-Nucintosh/blob/Images/ventura.png?raw=true)
 Funziona | Working: macOS Ventura 13.0.1:
-Download & info EFI folder [here](https://github.com/DANDEBAND/Intel-Nucintosh/issues/3)
+Download & info EFI folder [here](https://github.com/DANDEBAND/Intel-Nucintosh/releases)
 
 ## Dettagli | Details
-* Works with macOS *Big Sur* and *Monterey*
+* Works with macOS *Monterey* and *Ventura*
 * OpenCore bootloader with the following kexts:
   - Lilu
   - VirtualSMC
