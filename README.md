@@ -14,11 +14,8 @@ It should leave you with a stable and reliable build but, as always, these thing
 Compatible with macOS Mojave, Catalina, Big Sur, Monterey and Ventura.
 
 ![macOS Ventura](https://github.com/DANDEBAND/Intel-Nucintosh/blob/Images/ventura.png?raw=true)
-Funziona | Working: macOS Ventura Public Beta:
+Funziona | Working: macOS Ventura 13.0.1:
 Download & info EFI folder [here](https://github.com/DANDEBAND/Intel-Nucintosh/issues/3)
-
-![macOS Monterey](https://github.com/DANDEBAND/Intel-Nucintosh/blob/Images/Monterey.png?raw=true)
-Funziona | Working: macOS 12 Monterey
 
 ## Dettagli | Details
 * Works with macOS *Big Sur* and *Monterey*
@@ -42,7 +39,7 @@ Funziona | Working: macOS 12 Monterey
 * [Credits](#credits)
   
 ## Installation
-+ Update to the latest (0089) BIOS -> load BIOS defaults -> click advanced and change;
++ Update to the latest (0090) BIOS -> load BIOS defaults -> click advanced and change;
 ```
 Devices -> USB -> Port Device Charging Mode: off
 Devices -> USB -> USB Legacy -> Disabled
