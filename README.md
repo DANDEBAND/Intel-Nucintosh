@@ -34,7 +34,7 @@ Download & info EFI folder [here](https://github.com/DANDEBAND/Intel-Nucintosh/r
 * [Installazione | Installation](#installation)
 * [Post install](#post-install)
 * [Updating](#updating)
-* [Update Bios Intel] (#update-bios-intel)
+* [Update Bios Intel](#update-bios-intel)
 * [Intel wifi/bt](#intel-bluetooth-and-wifi)
 * [Everything](#Everything)
 * [Credits](#credits)
