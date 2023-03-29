@@ -1,4 +1,4 @@
-# Intel-Nucintosh 2023
+# Intel-Nucintosh 2023 (Update 29/03/2023)
 # Intel NUC8IxBEx Hackintosh
 
 [ITALIANO]
