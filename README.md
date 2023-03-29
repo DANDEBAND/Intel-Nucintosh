@@ -34,12 +34,13 @@ Download & info EFI folder [here](https://github.com/DANDEBAND/Intel-Nucintosh/r
 * [Installazione | Installation](#installation)
 * [Post install](#post-install)
 * [Updating](#updating)
+* [Update Bios Intel] (#update-bios-intel)
 * [Intel wifi/bt](#intel-bluetooth-and-wifi)
 * [Everything](#Everything)
 * [Credits](#credits)
   
 ## Installation
-+ Update to the latest (0090) BIOS -> load BIOS defaults -> click advanced and change;
++ Update to the latest (0092) BIOS -> load BIOS defaults -> click advanced and change;
 ```
 Devices -> USB -> Port Device Charging Mode: off
 Devices -> USB -> USB Legacy -> Disabled
@@ -101,6 +102,11 @@ That's all!
 
 ## Updating
 Updating is easy, first copy the MLB/ROM/SystemSerialNumber/SystemUUID values from your current config to a text file then delete the whole EFI folder and replace it with the latest release/clone from this repo. Copy your PlatformInfo fields from the text file into the new config. Unless you made other changes this is all thats needed.
+
+## Update Bios Intel
+Aggiornamento del BIOS [BECFL357]
+Questo record di download contiene opzioni per l'aggiornamento del BIOS di Kit Intel® NUC NUC8i7BE, NUC8i5BE e NUC8i3BE.
+[here](https://www.intel.it/content/www/it/it/download/743906/bios-update-becfl357.html?wapkw=nuc8i7beh).
 
 ## Intel bluetooth and wifi
 + Wifi works and can be managed using native tools, speeds are still slow but connections are stable
