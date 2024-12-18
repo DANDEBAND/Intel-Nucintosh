@@ -36,6 +36,7 @@ Download & info EFI folder [here](https://github.com/DANDEBAND/Intel-Nucintosh/r
 * [Updating](#updating)
 * [Update Bios Intel](#update-bios-intel)
 * [Intel wifi/bt](#intel-bluetooth-and-wifi)
+* [Broadcom Wireless/Bletooth](#Broadcom-Wireless-and-Bluetooth)
 * [Everything](#Everything)
 * [Credits](#credits)
   
