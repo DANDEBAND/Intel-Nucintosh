@@ -123,6 +123,7 @@ One big plus of going native is that you gain HID-proxy. This means that when th
 
 Speaking of the $10 BCM943224PCIEBT2, I've personally tested that card and it still works fine in Catalina by setting Kernel -> Patch -> 0 to true. Big Sur will need the patch disabled and AirportBrcmFixup added with boot flags brcmfx-driver=2 brcmfx-country=#a instead. For Monterey you will need to patch the installer which will disable SIP and isn't recommended. You can also add your card as a device in the configs DeviceProperties section and set the options there, for example;
 
+```
 <key>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)</key>
  	<dict>
  		<key>AAPL,slot-name</key>
@@ -136,6 +137,7 @@ Speaking of the $10 BCM943224PCIEBT2, I've personally tested that card and it st
  		<key>brcmfx-driver</key>
  		<string>2</string>
  	</dict>
+```
 Make sure you check if the PciRoot/slot-name paths are correct, you can find them in IOreg or Hackintool. Also make sure the AirPortBrcm4360_Injector.kext plug-in that will be added if you use the ProperTree snapshot command is disabled. It is part of AirportBrcmFixup but can cause Monterey boot-up to stall and wifi not working properly (shows as disabled).
 
 Some sellers on AliExpress have converter cards that already have the small 1.25mm pitch jst connector on it. It connects to one of the two internal usb ports. I use one without issues in my NUC. They usually list them as NUC8 compatible and cost a bit more than other converter cards.
