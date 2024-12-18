@@ -108,6 +108,46 @@ Questo record di download contiene opzioni per l'aggiornamento del BIOS di Kit I
 + Wifi works and can be managed using native tools, speeds are still slow but connections are stable
 + Bluetooth works for HID devices such as mouse, keyboard and audio stuff but connections are flaky. It may also not wake up from sleep properly
 
+## Broadcom Wireless and Bluetooth
+
+Apple/3rd party bluetooth and wifi
+
+For both 1st and 3rd party you will need a supported wifi/bluetooth combo card and an adapter (see below) to convert it to M key. As far as I know compatible M key combo cards don't exist.
+
+3rd party cards will need these kexts: AirportBrcmFixup + BrcmPatchRAM, read the instructions on the repo's and you'll be up and running in no time. I've tested the very affordable DW1820A in many machines including the NUC and it works great. For some cards you may need to create an entry under devices in the config that disables ASPM, this only needed if you have issues with sleep.
+
+1st party is my preferred option. Grab an Apple 6+12 pin to m.2 M-key converter card and go native with something like the BCM94360CS2. Please note the number of antenna connectors. Some have more than 2, so you'll have to add some antenna's and maybe even mod your case. Though there is some room under the plastic lid, it can fit internal antennas like this. The lid can be removed with some strategic force and there's a hole to route the wires trough too. I would use those and leave the standard antenna's connected to the Intel module. They're very cheap and the antenna connectors on the Intel module are very fragile.
+
+One big plus of going native is that you gain HID-proxy. This means that when there is no OS running the Airport card will proxy any paired HID bluetooth devices to the machine as usb devices. This means you can enter the BIOS or boot menu using the bluetooth keyboard and mouse. This is not a feature you will find on many other cards, including the the one Intel put in here. Even expensive bluetooth cards often can not do this. But Apple has added it even in the cheap BCM943224PCIEBT2 Airport card.
+
+Speaking of the $10 BCM943224PCIEBT2, I've personally tested that card and it still works fine in Catalina by setting Kernel -> Patch -> 0 to true. Big Sur will need the patch disabled and AirportBrcmFixup added with boot flags brcmfx-driver=2 brcmfx-country=#a instead. For Monterey you will need to patch the installer which will disable SIP and isn't recommended. You can also add your card as a device in the configs DeviceProperties section and set the options there, for example;
+
+<key>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)</key>
+ 	<dict>
+ 		<key>AAPL,slot-name</key>
+ 		<string>Internal@0,28,4/0,0</string>
+		<key>device_type</key>
+ 		<string>Network controller</string>
+ 		<key>model</key>
+ 		<string>Apple Airport BCM43224 802.11a/b/g/n</string>
+ 		<key>brcmfx-country</key>
+ 		<string>#a</string>
+ 		<key>brcmfx-driver</key>
+ 		<string>2</string>
+ 	</dict>
+Make sure you check if the PciRoot/slot-name paths are correct, you can find them in IOreg or Hackintool. Also make sure the AirPortBrcm4360_Injector.kext plug-in that will be added if you use the ProperTree snapshot command is disabled. It is part of AirportBrcmFixup but can cause Monterey boot-up to stall and wifi not working properly (shows as disabled).
+
+Some sellers on AliExpress have converter cards that already have the small 1.25mm pitch jst connector on it. It connects to one of the two internal usb ports. I use one without issues in my NUC. They usually list them as NUC8 compatible and cost a bit more than other converter cards.
+
+Those other cards (and 3rd party ones) do not come with this connector so you'd have to make your own. My cheaper eBay card came with a cable with standard internal usb header and a cable without any plugs so you can attach your own. Check the listing carefully before ordering. Also make sure it converts to M key and once you have it that the spacing pillar is in the correct position. Don't short the poor Airport out.
+
+The two internal usb ports are already mapped in the USBPorts.kext, if you made your own map you'll need to make a new map if you use the internal usb headers
+When using a 1st or 3rd party combo card you need to disable both bluetooth and wifi in the BIOS and also remove any Intel related bluetooth and wifi kexts
+You will also need to remove the config block for HS07 used by the onboard Intel wifi/bt card (this was HS10 in previous usb portmaps) from Info.plist inside USBPorts.kext, without this step bluetooth won't work (properly) after sleep. On 1st party cards it gets "stuck" in HID-proxy mode; bluetooth mouse and keyboard may still work but not optimally and laggy.
+You'll also want to set your region to #a as it allows for full 80mhz channel width on ac cards. It might not be 100% legal depending on where you live. I've used this method on a few DW1820A cards and the speed increase was pretty amazing. This method may also apply when using real Apple cards, you will need add AirportBrcmFixup on 1st party cards. To change the region simply add the following boot flag brcmfx-country=#a. Make sure your router also supports 80mhz channel width and before doing anything hold down alt while clicking the wifi icon to check the current channel width.
+
+One last thing to remember is that waking the machine from sleep using bluetooth devices will not work. This is due to power being cut to the module. The module does start itself up very fast. By the time my screen wakes up my bluetooth devices are already reconnected. There is way to bypass this but it includes either modding your adapter card or making your own. I've asked some sellers on AliExpress to produce this card but didn't have any luck. If you can make it or know a seller who's willing to make it please let me know.
+
 ## Everything
 + Where possible further optimisations and ThunderBolt hot-plug support
 
