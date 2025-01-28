@@ -5,13 +5,13 @@
 Questo è un repository rapido per i modelli Intel NUC di ottava generazione Coffee Lake.
 Ho usato varie fonti (vedi crediti) per costruire il mio EFI e ho fatto alcuni test.
 Dovrebbe lasciarti con una build stabile e affidabile ma, come sempre, queste cose non sono mai davvero finite.
-Compatibile con macOS Mojave, Catalina, Big Sur, Monterey e Ventura.
+Compatibile con macOS Mojave, Catalina, Big Sur, Monterey, Ventura e Sequoia.
 
 [ENGLISH]
 This is a quick repository for the 8th Gen Coffee Lake Intel NUC models.
 I used various sources (see credits) to build my EFI and did some testing.
 It should leave you with a stable and reliable build but, as always, these things are never really over.
-Compatible with macOS Mojave, Catalina, Big Sur, Monterey, Ventura, Monterey and Sequoia.
+Compatible with macOS Mojave, Catalina, Big Sur, Monterey, Ventura and Sequoia.
 
 ![macOS Sequoia](https://github.com/DANDEBAND/Intel-Nucintosh/blob/main/More/images/Sequoia.jpg?raw=true)
 Funziona | Working: macOS Sequoia 15.3:
