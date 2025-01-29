@@ -158,5 +158,5 @@ One last thing to remember is that waking the machine from sleep using bluetooth
 + https://github.com/acidanthera
 + https://github.com/OpenIntelWireless
 + https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html
-+ https://github.com/osy
++ https://github.com/dortania/OpenCore-Legacy-Patcher/releases
 + Many [random](https://github.com/Rashed97/Intel-NUC-DSDT-Patch/commit/47476815b52f8e4c97e8f85df158c9ab1b6ecedd) repos [with](https://github.com/honglov3/NUC8I7BEH) information [and](https://github.com/sarkrui/NUC8i7BEH-Hackintosh-Build) research [that](https://github.com/mbarbierato/Intel-NUC8i3BEH) I've [forgotten](https://github.com/honglov3/NUC8I7BEH) about.
